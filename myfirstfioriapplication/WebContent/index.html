@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m,sap.ui.layout"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-bindingSyntax="complex"
+				>
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				sap.ui.localResources("myfirstfioriapplication");
+				
+				var page = sap.ui.view({id:"idMain", viewName:"myfirstfioriapplication.Main", type:sap.ui.core.mvc.ViewType.JS});
+				var page1=sap.ui.view({id:"idSecond",viewName:"myfirstfioriapplication.Second",type:sap.ui.core.mvc.ViewType.JS});
+				
+				//app.addPage(page);
+				var app = new sap.m.SplitApp("idApp",{
+					initialMasterPage:"idMain",
+					initialDetailsPage:"idSecond",
+					masterPages:[page],
+				detailPages:[page1]	
+				});
+				app.placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

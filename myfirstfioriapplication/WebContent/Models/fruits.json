@@ -1,0 +1,75 @@
+{
+"fruitnames":[
+{
+"name":"strawberry",
+"property":"alkaline",
+"price":"10",
+"description":"It is yellow",
+"currency":"yen",
+"image":"Images/strawberry.jpg",
+"supplier":"Exporters co.",
+"Availability":"Available"
+},{
+"name":"apple",
+"property":"alkaline",
+"price":"10",
+"description":"It is red",
+"currency":"USD",
+"image":"Images/apple.jpg",
+"supplier":"Exporters co.",
+"Availability":"Available"
+},
+{
+"name":"litchi",
+"property":"citrus",
+"price":"12",
+"description":"It is green",
+"currency":"INR",
+"image":"Images/litchi.jpg",
+"supplier":"Exporters co.",
+"Availability":"Out of stock"
+},
+{
+"name":"orange",
+"property":"citrus",
+"price":"12",
+"description":"It is orange",
+"currency":"INR",
+"image":"Images/orange.jpg",
+"supplier":"universal co.",
+"Availability":"Not Available"
+},
+
+{
+"name":"banana",
+"property":"citrus",
+"price":"12",
+"description":"It is green",
+"currency":"INR",
+"image":"Images/ban.jpg",
+"supplier":"Traders co.",
+"Availability":"Not Available"
+}
+
+
+
+
+
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
