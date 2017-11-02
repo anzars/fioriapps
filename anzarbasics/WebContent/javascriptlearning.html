@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="javascript website">
+<meta name="description" content="This is javascript learning website">
+<meta name="author" content="Anzar Naik">
+<script>
+function addrow()
+{
+	var tableBodyElement=document.getElementById("tbodyid");
+	var trElement=document.createElement("tr");
+	var tdElement=document.createElement("td");
+	
+	tdElement.innerText=document.getElementById("uname").value;
+	trElement.appendChild(tdElement);
+var tdElement=document.createElement("td");
+	
+tdElement.innerText=document.getElementById("pwd").value;
+	trElement.appendChild(tdElement);
+	tableBodyElement.appendChild(trElement);
+	
+	}
+function callMe()
+{
+	var newHTML="<h1>Your login was succesful</h1> <br><img src='images/untitled.png'>";
+	var uName=document.getElementById("uname");
+var password=document.getElementById("pwd");
+if(uName.value=="Anzar" && password.value=="anzar123")
+	{
+	document.write(newHTML);
+	}
+else{
+	document.getElementById("msg").innerText="Wrong login credentials";
+	document.getElementById("msg").style.color="red";
+}
+	}
+</script>
+<title>Anzar's</title>
+</head>
+<body style="background-color:teal;">
+<label>username</label>
+<input id="uname">
+<br>
+<label>password</label>
+<input id="pwd">
+<button onclick="callMe()">login</button>
+<label id="msg"></label>
+
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>age</th>
+</tr>
+</thead>
+
+<tbody id="tbodyid">
+<tr><td>anzar</td><td>34</td></tr>
+<tr><td>fatima</td><td>27</td></tr>
+<tr><td>Aisha</td><td>7</td></tr>
+
+</tbody>
+
+</table>
+<button onclick="addrow()">addrow</button>
+</body>
+</html>

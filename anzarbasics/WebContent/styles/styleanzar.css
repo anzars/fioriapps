@@ -1,0 +1,77 @@
+<style>
+
+
+.bigclass {float:left;
+            margin :20px;
+          
+     
+       
+       
+       
+       }
+       
+ .headclass {
+      color: orange;
+   background-color: lime;
+   border: 1px solid black;
+   font-style:italic;
+   font-weight: bold;
+   padding:5px;
+   padding-left: 20px;
+   
+       
+       
+       }
+       
+    .descriptionclass {
+      color: fuchsia;
+   background-color: orange;
+   font-style:italic;
+   font-weight: bold;
+   border: 1px solid black;
+       
+       
+       
+       }
+    
+    input:focus {
+    background-color: red;
+    border: 1px solid green;
+    }
+
+         .actualimg{
+                 
+                float:left;
+                padding:5px;  
+                opacity:0.4;  
+         
+         
+         }
+         .actualimg:hover{
+                 
+                float:left;
+                padding:5px;  
+                opacity:1;
+                border: 20px dashed red;  
+         
+         
+         }
+        table, tr,td,th{
+         border: 1px solid black;
+         
+         border-collapse: collapse;
+         }
+         
+         tr:nth-child(even){
+         
+         background-color : lime;
+         
+         }
+         tr:nth-child(odd)
+         {
+         background-color:maroon;
+         }
+         #tabhead{
+         background-color:blue;
+         }
+</style>
